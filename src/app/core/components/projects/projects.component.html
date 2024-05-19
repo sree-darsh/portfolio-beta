@@ -1,0 +1,19 @@
+<div class="projects">
+  <h3 class="subtitle"><code>&lt;Projects /&gt;</code></h3>
+  <div class="projects-cards">
+    <div class="projects-item" *ngFor="let project of projects">
+      <figure class="projects-img">
+        <img [src]="project.imgUrl" />
+      </figure>
+      <div class="projects-content">
+        <h4 class="projects-title">{{ project.title }}</h4>
+        <p class="projects-details">{{ project.details }}</p>
+        <ul class="projects-techs">
+          <li *ngFor="let tech of project.tech">
+            <span>{{ tech.title }}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

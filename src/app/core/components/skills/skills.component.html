@@ -1,0 +1,8 @@
+<div class="skills">
+  <h3 class="subtitle"><code>&lt;Skills /&gt;</code></h3>
+  <ul>
+    <li *ngFor="let image of images">
+      <img [src]="image.url" [alt]="image.title" [title]="image.title" />
+    </li>
+  </ul>
+</div>

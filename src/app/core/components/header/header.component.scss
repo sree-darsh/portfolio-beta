@@ -1,0 +1,38 @@
+.navigation {
+  background-color: rgba(white, 0.06);
+  position: sticky;
+  top: 0;
+
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    a {
+      text-decoration: none;
+      margin-right: 30px;
+      color: rgba(white, 0.2);
+      font-size: 14px;
+      &.active {
+        color: var(--primary-color);
+      }
+    }
+  }
+  .closebar {
+    display: flex;
+    gap: 8px;
+    li {
+      width: 12px;
+      height: 12px;
+      background-color: green;
+      border-radius: 50px;
+      list-style: none;
+      &:nth-child(2) {
+        background-color: yellow;
+      }
+      &:nth-child(3) {
+        background-color: red;
+      }
+    }
+  }
+}

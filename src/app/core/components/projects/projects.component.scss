@@ -1,0 +1,67 @@
+:host {
+  ::ng-deep {
+    .projects {
+      &-cards {
+        display: flex;
+
+        gap: 15px;
+      }
+      &-item {
+        background-color: rgba(30, 41, 59, 0.5);
+        border: 1px solid rgba(white, 0.2);
+        width: 300px;
+        border-radius: 8px;
+        display: flex;
+        padding: 15px;
+      }
+      &-title {
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 15px;
+      }
+      &-details {
+        color: white;
+        font-size: 14px;
+        font-weight: 300;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        opacity: 0.6;
+      }
+      &-content {
+        width: calc(100% - 50px);
+      }
+      &-img {
+        width: 50px;
+        height: 50px;
+        margin-right: 15px;
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      &-techs {
+        margin: 0px;
+        padding: 0;
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        li {
+          list-style: none;
+          span {
+            border-radius: 30px;
+            background-color: rgba(white, 0.2);
+            padding: 2px 8px;
+            font-size: 12px;
+            display: block;
+            color: white;
+            opacity: 0.4;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+:host {
+  ::ng-deep {
+    .hero {
+      min-height: 25px;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}

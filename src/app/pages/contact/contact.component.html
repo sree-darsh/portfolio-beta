@@ -1,0 +1,9 @@
+<h1>Contact us</h1>
+
+<form [formGroup]="contactForm">
+  <input type="text" placeholder="Enter your name" formControlName="name" />
+  <input type="email" placeholder="Enter your email" formControlName="email" />
+  <button [disabled]="contactForm.invalid" (click)="submitForm()">
+    Submit
+  </button>
+</form>
